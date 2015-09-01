@@ -1,0 +1,58 @@
+/* breakpoints ================================================= */
+/* colors ================================================= */
+/* typography ================================================= */
+/* transitions ================================================= */
+/* mixins ================================================= */
+/* style ================================================= */
+html, body {
+  background-color: white;
+  margin: 0;
+  min-height: 200px;
+  padding: 0;
+  position: relative;
+  width: 100%; }
+
+.clear {
+  clear: both;
+  width: 100%; }
+
+/* general ================================================== */
+.input-text-container {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 64px;
+  padding: 0 16px;
+  position: relative;
+  width: 100%; }
+  .input-text-container .label {
+    color: #9e9e9e;
+    font: 400 14px "Lora", serif;
+    padding: 8px 0;
+    position: absolute;
+    opacity: 0; }
+  .input-text-container .input-text {
+    border: none;
+    border-bottom: 1px #9e9e9e solid;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #212121;
+    font: 400 18px "Lora", serif;
+    height: 40px;
+    margin: 16px 0 8px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 100%; }
+    .input-text-container .input-text:focus {
+      border-bottom: 2px #dfb100 solid;
+      color: #212121;
+      outline: none; }
+  .input-text-container .validation-error {
+    border-bottom: 2px #ef6c00 solid; }
+
+/* desktop ================================================== */
+/* tablet ================================================== */
+/* phone ================================================== */

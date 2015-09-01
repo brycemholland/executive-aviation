@@ -1,0 +1,114 @@
+/* breakpoints ================================================= */
+/* colors ================================================= */
+/* typography ================================================= */
+/* transitions ================================================= */
+/* mixins ================================================= */
+/* style ================================================= */
+html, body {
+  background-color: white;
+  margin: 0;
+  min-height: 200px;
+  padding: 0;
+  position: relative;
+  width: 100%; }
+
+.clear {
+  clear: both;
+  width: 100%; }
+
+/* general ================================================== */
+.main-container {
+  margin: auto;
+  min-height: 100vh; }
+
+.sub-container {
+  margin: auto;
+  max-width: 960px;
+  padding: 16px 0; }
+
+.section-header {
+  background-color: #dfb100;
+  color: #212121;
+  font: 700 28px "Michroma", sans-serif;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+.column {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 16px 0;
+  position: relative;
+  width: 50%; }
+
+.title {
+  color: #212121;
+  font: 300 24px "Michroma", sans-serif;
+  padding: 16px 16px 0; }
+
+.body-copy {
+  color: #212121;
+  font: 400 14px "Lora", serif;
+  padding: 16px; }
+  .body-copy img {
+    padding: 16px 0;
+    width: 100%; }
+
+.bullets {
+  font: 300 18px 'Michroma', sans-serif;
+  list-style-type: none; }
+  .bullets li {
+    padding-bottom: 16px;
+    position: relative; }
+  .bullets .triangle {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #dfb100;
+    position: absolute;
+    left: -24px;
+    top: 6px; }
+
+.button {
+  background-color: #212121;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font: 400 18px "Michroma", sans-serif;
+  letter-spacing: 1px;
+  line-height: 16px;
+  margin: 16px auto;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transition: all 0.2s;
+  width: 240px; }
+  .button:hover {
+    color: #dfb100;
+    top: -2px; }
+
+.left {
+  float: left;
+  position: relative; }
+
+.right {
+  float: right;
+  position: relative; }
+
+.map {
+  background: url("../images/ea_map.png") center no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%; }
+
+/* desktop ================================================== */
+/* tablet ================================================== */
+/* phone ================================================== */

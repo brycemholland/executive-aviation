@@ -1,0 +1,54 @@
+/* breakpoints ================================================= */
+/* colors ================================================= */
+/* typography ================================================= */
+/* transitions ================================================= */
+/* mixins ================================================= */
+/* style ================================================= */
+html, body {
+  background-color: white;
+  margin: 0;
+  min-height: 200px;
+  padding: 0;
+  position: relative;
+  width: 100%; }
+
+.clear {
+  clear: both;
+  width: 100%; }
+
+/* general ================================================== */
+.footer {
+  background-color: #212121;
+  box-sizing: border-box;
+  display: block;
+  height: 48px;
+  margin-top: 24px;
+  position: relative;
+  width: 100%; }
+  .footer .footer-link-container {
+    font: 400 14px "Lora", serif;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0;
+    position: relative; }
+    .footer .footer-link-container .footer-logo, .footer .footer-link-container .footer-link {
+      box-sizing: border-box;
+      color: white;
+      display: block;
+      height: 100%;
+      padding: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.1s; }
+      .footer .footer-link-container .footer-logo:hover, .footer .footer-link-container .footer-link:hover {
+        color: #dfb100; }
+    .footer .footer-link-container .footer-logo {
+      letter-spacing: 1px;
+      position: absolute; }
+    .footer .footer-link-container .footer-link {
+      float: right; }
+
+/* desktop ================================================== */
+/* tablet ================================================== */
+/* phone ================================================== */
