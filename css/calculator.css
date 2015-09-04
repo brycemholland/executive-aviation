@@ -24,7 +24,7 @@ html, body {
   padding-top: 16px;
   text-align: center; }
   .result-container .result-number {
-    font: 300 18px 'Michroma', sans-serif; }
+    font: 400 18px "Michroma", sans-serif; }
 
 .map-container {
   position: relative;
@@ -47,14 +47,14 @@ html, body {
   .map-container {
     padding-bottom: 55%; } }
 /* tablet ================================================== */
-@media (min-width: 600px) and (max-width: 959px) {
+@media (min-width: 700px) and (max-width: 959px) {
   .input-dropdown-container, .input-text-container, .result-container {
     width: 25%; }
 
   .map-container {
     padding-bottom: 75%; } }
 /* phone ================================================== */
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .input-dropdown-container, .input-text-container, .result-container {
     width: 100%; }
 

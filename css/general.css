@@ -46,7 +46,7 @@ html, body {
 
 .title {
   color: #212121;
-  font: 300 24px "Michroma", sans-serif;
+  font: 400 18px "Michroma", sans-serif;
   padding: 16px 16px 0; }
 
 .body-copy {
@@ -58,7 +58,7 @@ html, body {
     width: 100%; }
 
 .bullets {
-  font: 300 18px 'Michroma', sans-serif;
+  font: 400 18px "Michroma", sans-serif;
   list-style-type: none; }
   .bullets li {
     padding-bottom: 16px;

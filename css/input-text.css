@@ -23,23 +23,23 @@ html, body {
   float: left;
   height: 64px;
   padding: 0 16px;
-  position: relative;
-  width: 100%; }
+  position: relative; }
   .input-text-container .label {
-    color: #9e9e9e;
-    font: 400 14px "Lora", serif;
+    color: #212121;
+    font: 400 10px "Lora", serif;
     padding: 8px 0;
     position: absolute;
     opacity: 0; }
   .input-text-container .input-text {
     border: none;
-    border-bottom: 1px #9e9e9e solid;
+    border-bottom: 1px #e0e0e0 solid;
     border-radius: 0;
     box-sizing: border-box;
-    color: #212121;
-    font: 400 18px "Lora", serif;
+    color: #e0e0e0;
+    font: 400 18px "Michroma", sans-serif;
     height: 40px;
     margin: 16px 0 8px;
+    max-width: 600px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
@@ -54,5 +54,16 @@ html, body {
     border-bottom: 2px #ef6c00 solid; }
 
 /* desktop ================================================== */
+@media (min-width: 960px) {
+  .input-text-container {
+    width: 50%; } }
 /* tablet ================================================== */
+@media (min-width: 700px) and (max-width: 959px) {
+  .input-text-container {
+    width: 50%; } }
 /* phone ================================================== */
+@media (max-width: 699px) {
+  .input-text-container {
+    width: 100%; }
+    .input-text-container .input-text {
+      font: 400 14px "Lora", serif; } }

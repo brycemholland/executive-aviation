@@ -17,6 +17,19 @@ html, body {
   width: 100%; }
 
 /* general ================================================== */
+html, body {
+  background-color: white;
+  margin: 0;
+  min-height: 200px;
+  padding: 0;
+  position: relative;
+  width: 100%; }
+
+.clear {
+  clear: both;
+  width: 100%; }
+
+/* general ================================================== */
 .footer {
   background-color: #212121;
   box-sizing: border-box;
@@ -41,8 +54,8 @@ html, body {
       text-decoration: none;
       text-transform: uppercase;
       transition: all 0.1s; }
-      .footer .footer-link-container .footer-logo:hover, .footer .footer-link-container .footer-link:hover {
-        color: #dfb100; }
+    .footer .footer-link-container:hover {
+      color: #dfb100; }
     .footer .footer-link-container .footer-logo {
       letter-spacing: 1px;
       position: absolute; }

@@ -1,0 +1,130 @@
+@import "master";
+
+/* general ================================================== */
+
+.main-container {
+  margin: auto;
+  min-height: 100vh; 
+}
+.sub-container {
+  margin: auto;
+  max-width: 960px;
+  padding: 16px 0; 
+}
+.section-header {
+  background-color: $primary-color;
+  color: $nutral-color3;
+  font: $headline;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  text-align: center;
+  text-transform: uppercase; 
+}
+.column {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 16px 0;
+  position: relative;
+  width: 50%; 
+}
+.title {
+  color: $nutral-color3;
+  font: $title;
+  padding: 16px 16px 0;
+}
+.body-copy {
+  color: $nutral-color3;
+  font: $body;
+  padding: 16px; 
+  img {
+    padding: 16px 0;
+    width: 100%; 
+  }
+}
+
+.bullets {
+  font: $title;
+  list-style-type: none; 
+  li {
+    padding-bottom: 16px;
+    position: relative; 
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid $primary-color;
+    position: absolute;
+    left: -24px;
+    top: 6px; 
+  }
+}
+
+.button {
+  background-color: $nutral-color3;
+  border-radius: 4px;
+  color: $nutral-color1;
+  cursor: pointer;
+  display: block;
+  font: $title;
+  letter-spacing: 1px;
+  line-height: 16px;
+  margin: 16px auto;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transition: all 0.2s;
+  width: 240px; 
+  &:hover {
+    color: $primary-color;
+    top: -2px;
+  }
+}
+
+.left {
+  float: left;
+  position: relative;
+}
+
+.right {
+  float: right;
+  position: relative;
+}
+
+.map {
+  background: url("../images/ea_map.png") center no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+}
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  
+
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  
+
+}

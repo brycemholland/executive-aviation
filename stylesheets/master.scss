@@ -1,0 +1,69 @@
+/* breakpoints ================================================= */
+
+$phone-max: 699px;
+$tablet-min: 700px;
+$tablet-max: 959px;
+$desktop-min: 960px;
+
+
+/* colors ================================================= */
+
+$primary-color: #dfb100;
+$primary-color-dark: #dfb100;
+$secondary-color: #EF6C00;
+$nutral-color1: #ffffff;
+$nutral-color2: #e0e0e0;
+$nutral-color3: #212121;
+
+
+/* typography ================================================= */
+
+$headline: 700 28px "Michroma", sans-serif;
+$title: 400 18px "Michroma", sans-serif;
+$body: 400 14px "Lora", serif;
+$caption: 400 10px "Lora", serif;
+$button: 400 18px "Lora", serif;
+
+
+/* transitions ================================================= */
+
+$fast: 0.1s;
+$medium: 0.2s;
+$slow: 0.3s;
+
+
+
+/* mixins ================================================= */
+
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+/* style ================================================= */
+
+html, body{
+  background-color: $nutral-color1;
+  margin: 0;
+  min-height: 200px;
+  //height: 100%;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.clear{
+  clear: both;
+  width: 100%;
+}

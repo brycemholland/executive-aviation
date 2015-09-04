@@ -1,0 +1,80 @@
+@import "master";
+
+/* general ================================================== */
+
+html, body {
+  background-color: $nutral-color1;
+  margin: 0;
+  min-height: 200px;
+  padding: 0;
+  position: relative;
+  width: 100%; }
+
+.clear {
+  clear: both;
+  width: 100%; }
+
+/* general ================================================== */
+.footer {
+  background-color: $nutral-color3;
+  box-sizing: border-box;
+  display: block;
+  height: 48px;
+  margin-top: 24px;
+  position: relative;
+  width: 100%; 
+  .footer-link-container {
+    font: $body;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0;
+    position: relative; 
+    .footer-logo, .footer-link {
+      box-sizing: border-box;
+      color: $nutral-color1;
+      display: block;
+      height: 100%;
+      padding: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.1s; 
+    }
+      &:hover {
+        color: #dfb100; 
+      }
+    .footer-logo {
+      letter-spacing: 1px;
+      position: absolute; 
+    }
+    .footer-link {
+      float: right; 
+    }
+  }
+}
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  
+
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  
+
+}

@@ -1,0 +1,67 @@
+@import "master";
+
+/* general ================================================== */
+.navbar {
+  background-color: $nutral-color1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px $nutral-color3;
+  display: block;
+  height: 72px;
+  position: relative;
+  width: 100%; 
+  .navbutton-container {
+    font: $button;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0;
+    position: relative;
+    width: 865px; 
+    .navbutton {
+      box-sizing: border-box;
+      color: $nutral-color3;
+      display: block;
+      float: left;
+      height: 100%;
+      letter-spacing: 1px;
+      padding: 24px 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.1s; 
+      &:hover {
+        background-color: $nutral-color3;
+        color: $primary-color; 
+      }
+    }
+    .navbutton-active {
+      background-color: $nutral-color3;
+      color: $primary-color;
+    }
+  }
+}
+
+
+/* desktop ================================================== */
+
+@media (min-width: $desktop-min) {
+
+  
+
+}
+
+
+/* tablet ================================================== */
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  
+
+}
+
+/* phone ================================================== */
+
+@media (max-width: $phone-max) {
+
+  
+
+}
