@@ -47,12 +47,13 @@ html, body {
 .title {
   color: #212121;
   font: 400 18px "Michroma", sans-serif;
-  padding: 16px 16px 0; }
+  padding: 16px; }
 
 .body-copy {
   color: #212121;
   font: 400 14px "Lora", serif;
-  padding: 16px; }
+  padding: 16px;
+  padding-bottom: 32px; }
   .body-copy img {
     padding: 16px 0;
     width: 100%; }
@@ -103,6 +104,30 @@ html, body {
   float: right;
   position: relative; }
 
+.pilot {
+  height: 350px;
+  padding: 0 16px; }
+  .pilot .image-container {
+    height: 318px;
+    overflow: hidden;
+    position: relative; }
+    .pilot .image-container img {
+      height: 100%;
+      left: 50%;
+      position: relative;
+      transform: translate(-50%, 0); }
+  .pilot .pilot-content {
+    float: left;
+    position: relative;
+    width: 50%; }
+    .pilot .pilot-content .name {
+      font: 700 28px "Michroma", sans-serif;
+      padding: 0 0 16px 16px; }
+    .pilot .pilot-content .position {
+      font: 400 18px "Lora", serif;
+      font-weight: bold;
+      padding-left: 16px; }
+
 .map {
   background: url("../images/ea_map.png") center no-repeat;
   background-size: cover;
@@ -112,3 +137,6 @@ html, body {
 /* desktop ================================================== */
 /* tablet ================================================== */
 /* phone ================================================== */
+@media (max-width: 699px) {
+  .column {
+    width: 100%; } }

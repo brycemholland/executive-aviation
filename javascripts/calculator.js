@@ -10,8 +10,10 @@ $(document).ready(function(){
   var $button = $(".button");
 
   var values = {
+    "beachjet" : 500,
     "king-air" : 500,
-    "diamond-jet" : 700,
+    "barron-58" : 700,
+    "bonanza-33" : 700,
     "atlanta" : 300,
     "austin" : 400,
     "chicago" : 600,

@@ -13,7 +13,7 @@ $(document).ready(function(){
 // Setup =================================================
   
   function adjustFooter(){
-    $main.css("min-height", ($main.height()-$navbar.height()-$slider.height()-$footer.height()-24)+"px" );
+    $main.css("min-height", ($main.height()-$navbar.height()-$footer.height()-24)+"px" );
   }
 
   adjustFooter();

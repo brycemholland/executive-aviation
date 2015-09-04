@@ -42,7 +42,7 @@ html, body {
     cursor: pointer;
     background-color: white;
     border: none;
-    border-bottom: 1px #e0e0e0 solid;
+    border-bottom: 1px #898989 solid;
     border-radius: 0;
     box-sizing: border-box;
     color: #212121;
@@ -76,7 +76,7 @@ html, body {
     background-color: white;
     border-radius: 0;
     box-sizing: border-box;
-    box-shadow: 0 2px 2px #e0e0e0;
+    box-shadow: 0 2px 2px #898989;
     height: 0%;
     left: 0;
     overflow-y: scroll;
@@ -100,7 +100,7 @@ html, body {
       transition: all 0.1s ease-in-out;
       width: 100%; }
       .input-dropdown-container .dropdown-option-container .dropdown-option:hover {
-        background-color: #e0e0e0; }
+        background-color: #898989; }
       .input-dropdown-container .dropdown-option-container .dropdown-option .dropdown-option-caption {
         color: #212121;
         font: 400 10px "Lora", serif; }

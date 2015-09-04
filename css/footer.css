@@ -54,8 +54,8 @@ html, body {
       text-decoration: none;
       text-transform: uppercase;
       transition: all 0.1s; }
-    .footer .footer-link-container:hover {
-      color: #dfb100; }
+      .footer .footer-link-container .footer-logo:hover, .footer .footer-link-container .footer-link:hover {
+        color: #dfb100; }
     .footer .footer-link-container .footer-logo {
       letter-spacing: 1px;
       position: absolute; }

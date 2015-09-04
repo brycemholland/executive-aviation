@@ -32,10 +32,10 @@ html, body {
     opacity: 0; }
   .input-text-container .input-text {
     border: none;
-    border-bottom: 1px #e0e0e0 solid;
+    border-bottom: 1px #898989 solid;
     border-radius: 0;
     box-sizing: border-box;
-    color: #e0e0e0;
+    color: #898989;
     font: 400 18px "Michroma", sans-serif;
     height: 40px;
     margin: 16px 0 8px;

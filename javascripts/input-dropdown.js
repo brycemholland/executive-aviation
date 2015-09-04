@@ -9,14 +9,21 @@ $(document).ready(function(){
   var $dropdown = $('.dropdown-option-container');
   var $option = $('.dropdown-option');
   var $arrow = $('.arrow');
+  var optionHeight = 50;//parseInt($option.css('height'));
 
 
   // When you type in input, show label ==========================================
 
   $input.click(function(){
     var $this_dropdown = $(this).siblings('.dropdown-option-container');
+    var numberOfOptions = $this_dropdown.children().length;
+    if (numberOfOptions < 5){
+      var dropdownHeight = numberOfOptions*optionHeight;
+    } else {
+      var dropdownHeight = 230;
+    }
     $this_dropdown.animate({
-      'height':'270%',
+      'height': dropdownHeight+'px',
       'top':'0'
     }, 200);
     $(this).removeClass('validation-error');

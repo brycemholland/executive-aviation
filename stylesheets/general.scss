@@ -32,12 +32,13 @@
 .title {
   color: $nutral-color3;
   font: $title;
-  padding: 16px 16px 0;
+  padding: 16px;
 }
 .body-copy {
   color: $nutral-color3;
   font: $body;
   padding: 16px; 
+  padding-bottom: 32px; 
   img {
     padding: 16px 0;
     width: 100%; 
@@ -97,6 +98,36 @@
   position: relative;
 }
 
+.pilot{
+  height: 350px;
+  padding: 0 16px;
+  .image-container{
+    height: 318px;
+    overflow: hidden;
+    position: relative;
+    img{
+      height: 100%;
+      left: 50%;
+      position: relative;
+      transform: translate(-50%, 0);
+    }
+  }
+  .pilot-content{
+    float: left;
+    position: relative;
+    width: 50%;
+    .name{
+      font: $headline;
+      padding: 0 0 16px 16px;
+    }
+    .position{
+      font: $button;
+      font-weight: bold;
+      padding-left: 16px;
+    }
+  }
+}
+
 .map {
   background: url("../images/ea_map.png") center no-repeat;
   background-size: cover;
@@ -125,6 +156,8 @@
 
 @media (max-width: $phone-max) {
 
-  
+  .column{
+    width: 100%;
+  }
 
 }

@@ -39,10 +39,10 @@ html, body {
       text-decoration: none;
       text-transform: uppercase;
       transition: all 0.1s; 
-    }
       &:hover {
-        color: #dfb100; 
+        color: $primary-color; 
       }
+    }
     .footer-logo {
       letter-spacing: 1px;
       position: absolute; 
