@@ -1,0 +1,76 @@
+.txt{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+A.txt:hover{
+	color: #FFff33;
+	text-decoration: underline;	
+}
+.txt1{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+A.txt1:hover{
+	color: #FFff33;
+	text-decoration: underline;	
+}
+.txt2{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+label {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333;
+}
+
+BODY {
+scrollbar-arrow-color:#85855D;
+scrollbar-base-color:#85855D;
+scrollbar-shadow-color:#85855D;
+scrollbar-face-color:#ffffff;
+scrollbar-highlight-color:#ffffff;
+scrollbar-dark-shadow-color:#85855D;
+scrollbar-3d-light-color:#85855D;
+}
+.textinput
+{
+ background: #ffffff;
+ border-color: #B2B2B2; 
+ border-width: 1pt; 
+ height: 12pt; 
+ font-family:  Arial, Verdana, Times New Roman, Garamond, Helvetica;
+ font-size: 11px;
+ color: #666666; 
+}
+.select
+{
+ background: #ffffff;
+ border-color: #B2B2B2; 
+ border-width: 1pt; 
+ height: 12pt; 
+ font-family:  Arial, Verdana, Times New Roman, Garamond, Helvetica;
+ font-size: 11px;
+ color: #666666; 
+}
+.message {
+scrollbar-arrow-color:#85855D;
+scrollbar-base-color:#85855D;
+scrollbar-shadow-color:#85855D;
+scrollbar-face-color:#ffffff;
+scrollbar-highlight-color:#ffffff;
+scrollbar-dark-shadow-color:#85855D;
+scrollbar-3d-light-color:#85855D;
+ background: #FFFFFF; 
+ border-color: #B2B2B2; 
+ border-width: 1pt; 
+ font-family:  Arial, Verdana, Times New Roman, Garamond, Helvetica;
+ font-size: 11px;
+ color: #666666; 
+}
