@@ -1,6 +1,10 @@
 @import "master";
 
 /* general ================================================== */
+#calculator-form{
+  padding: 64px 0;
+}
+
 .result-container {
   position: relative;
   float: left;
@@ -32,8 +36,10 @@
 
 @media (min-width: $desktop-min) {
 
-  .input-dropdown-container, .input-text-container, .result-container {
-    width: 25%; 
+  #calculator-form{
+    .input-dropdown-container, .input-text-container, .result-container {
+      width: 25%; 
+    }
   }
 
   .map-container {
@@ -47,8 +53,10 @@
 
 @media (min-width: $tablet-min) and (max-width: $tablet-max) {
 
-  .input-dropdown-container, .input-text-container, .result-container {
-    width: 25%; 
+  #calculator-form{
+    .input-dropdown-container, .input-text-container, .result-container {
+      width: 25%; 
+    }
   }
 
   .map-container {
@@ -61,8 +69,10 @@
 
 @media (max-width: $phone-max) {
 
-  .input-dropdown-container, .input-text-container, .result-container {
-    width: 100%; 
+  #calculator-form{
+    .input-dropdown-container, .input-text-container, .result-container {
+      width: 100%; 
+    }
   }
 
   .map-container {

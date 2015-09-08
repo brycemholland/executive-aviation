@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   // When input is blured & there's nothing in the input, remove validation-error ==========================================
 
-  $input.blur(function(){
+  $input.change(function(){
     $(this).removeClass('validation-error');
   });
 

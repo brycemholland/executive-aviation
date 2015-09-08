@@ -10,14 +10,14 @@ $message = $_POST['message'];
   $mailsubject = 'Masage recived from'.$fromsubject.' Contact Page';
   $body = $fromsubject.'
   
-  The person that contacted you is  '.$fname.'
-   E-mail: '.$mail.'
-   Phone Number: '.$phone.'
+The person that contacted you is  '.$fname.'
+E-mail: '.$mail.'
+Phone Number: '.$phone.'
   
-   Message: 
-   '.$message.'
+Message: 
+  '.$message.'
   
-  |---------END MESSAGE----------|'; 
+'; 
   mail($to, $subject, $body);
 }
 ?> 

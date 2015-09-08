@@ -53,11 +53,11 @@ html, body {
 /* desktop ================================================== */
 @media (min-width: 960px) {
   .post .input-text-field-container, .sort .input-text-field-container {
-    width: 50%; } }
+    width: 100%; } }
 /* tablet ================================================== */
 @media (min-width: 700px) and (max-width: 959px) {
   .input-text-field-container {
-    width: 50%; } }
+    width: 100%; } }
 /* phone ================================================== */
 @media (max-width: 699px) {
   .input-text-field-container {

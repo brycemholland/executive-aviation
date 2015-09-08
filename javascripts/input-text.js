@@ -25,7 +25,7 @@ $(document).ready(function(){
 
   // When input is blured & there's nothing in the input, remove label ==========================================
 
-  $input.blur(function(){
+  $input.change(function(){
     var $this_label = $(this).siblings($label);
     if ($(this).val() == ""){
       $this_label.animate({

@@ -17,6 +17,9 @@ html, body {
   width: 100%; }
 
 /* general ================================================== */
+#calculator-form {
+  padding: 64px 0; }
+
 .result-container {
   position: relative;
   float: left;
@@ -41,21 +44,21 @@ html, body {
 
 /* desktop ================================================== */
 @media (min-width: 960px) {
-  .input-dropdown-container, .input-text-container, .result-container {
+  #calculator-form .input-dropdown-container, #calculator-form .input-text-container, #calculator-form .result-container {
     width: 25%; }
 
   .map-container {
     padding-bottom: 55%; } }
 /* tablet ================================================== */
 @media (min-width: 700px) and (max-width: 959px) {
-  .input-dropdown-container, .input-text-container, .result-container {
+  #calculator-form .input-dropdown-container, #calculator-form .input-text-container, #calculator-form .result-container {
     width: 25%; }
 
   .map-container {
     padding-bottom: 75%; } }
 /* phone ================================================== */
 @media (max-width: 699px) {
-  .input-dropdown-container, .input-text-container, .result-container {
+  #calculator-form .input-dropdown-container, #calculator-form .input-text-container, #calculator-form .result-container {
     width: 100%; }
 
   .map-container {

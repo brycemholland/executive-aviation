@@ -44,7 +44,7 @@
 
   .post, .sort{ 
     .input-text-field-container{
-      width: 50%;
+      width: 100%;
     }
   }
 
@@ -56,7 +56,7 @@
 @media (min-width: $tablet-min) and (max-width: $tablet-max) {
 
   .input-text-field-container{
-    width: 50%;
+    width: 100%;
   }
 
 }
