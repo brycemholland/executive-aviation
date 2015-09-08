@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://localhost:8888/executive-aviation/aircraft.html -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Executive Aviation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="http://localhost:8888/executive-aviation/images/favicon.jpg">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/input-text.css">
+  <link rel="stylesheet" type="text/css" href="css/input-text-field.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+
+  <script src="javascripts/jquery-1.11.3.min.js"></script>
+  <script src="javascripts/jquery-migrate-1.2.1.min.js"></script>
+  <script src="javascripts/jquery-2.1.4.min.js"></script>
+  <script src="javascripts/jquery-ui.min.js"></script>
+  <script src="javascripts/jquery.autosize.min.js"></script>
+  <script src="javascripts/jquery.mobile.custom.min.js"></script>
+  <script src="javascripts/input-text.js"></script>
+  <script src="javascripts/input-text-field.js"></script>
+  <script src="javascripts/slider.js"></script>
+  <script src="javascripts/footer.js"></script>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbutton-container">
+      <a href="index.html" class="navbutton">Home</a>
+      <a href="about.html" class="navbutton">About</a>
+      <a href="why.html" class="navbutton">Why E.A.S.</a>
+      <a href="calculator.html" class="navbutton">Flight Calculator</a>
+      <a href="aircraft.html" class="navbutton">Our Aircraft</a>
+      <a href="contact.html" class="navbutton navbutton-active">Contact</a>
+    </div>
+  </div>
+
+  <div class="main-container">
+    
+    <a href="https://www.google.com/maps/place/Springdale+Municipal+Airport/@36.1740369,-94.121812,14z/data=!4m2!3m1!1s0x87c96b24a1c45623:0xe8418cb2b11e3662?hl=en" target="_"><div class="map"></div></a>
+
+    <div class="sub-container">
+      <div class="column body-copy">
+        <div class="">
+          Executive Aviation Services
+          <br>
+          802 Airport Road
+          <br>
+          Springdale, AR 72764
+        </div>
+        <div class="title">Contact Info</div>
+        <div class="">
+          Mark Myers
+          <br>
+          Director of Operations
+          <br>
+          (479) 936-1805
+        </div>
+      </div>
+      <form class="column" name="contact_form" method="post" action="mailer.php" onSubmit="return evalid()">
+
+        <div class="input-text-container">
+          <div class="label">Name</div>
+          <input name="fname" type="text" class="input-text" placeholder="Name"/>
+        </div>
+        <div class="input-text-container">
+          <div class="label">Email</div>
+          <input name="mail" type="text" class="input-text" placeholder="Email"/>
+        </div>
+        <div class="input-text-container">
+          <div class="label">Phone Number</div>
+          <input name="phone" type="text" class="input-text" placeholder="Phone Number"/>
+        </div>
+        <div class="input-text-field-container">
+          <textarea name="message" class="input-text-field" placeholder="Message"></textarea>
+        </div>
+        <div class="clear"></div>
+
+        <input name="Submit" type="submit" value="Submit" class="button ripple-button-dark"/>
+        <div class="clear"></div>
+
+      </form>
+      <script type="text/javascript">
+        //email form validation
+
+        function everif(str) {
+
+          var at="@"
+          var punct="."
+          var lat=str.indexOf(at)
+          var lstr=str.length
+          var lpunct=str.indexOf(punct)
+          if (str.indexOf(at)==-1){
+             alert("Valid email must be entered")
+             return false
+          }
+
+          if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+             alert("Valid email must be entered")
+             return false
+          }
+
+          if (str.indexOf(punct)==-1 || str.indexOf(punct)==0 || str.indexOf(punct)==lstr){
+              alert("Valid email must be entered")
+              return false
+          }
+
+           if (str.indexOf(at,(lat+1))!=-1){
+              alert("Valid email must be entered")
+              return false
+           }
+
+           if (str.substring(lat-1,lat)==punct || str.substring(lat+1,lat+2)==punct){
+              alert("Valid email must be entered")
+              return false
+           }
+
+           if (str.indexOf(punct,(lat+2))==-1){
+              alert("Valid email must be entered")
+              return false
+           }
+          
+           if (str.indexOf(" ")!=-1){
+              alert("Valid email must be entered")
+              return false
+           }
+
+           return true          
+        }
+
+        function evalid(){
+        var emailID=document.contact_form.mail
+        
+        if (everif(emailID.value)==false){
+          emailID.focus()
+          return false
+        }
+        
+        //empty field validation
+        
+        var fname=document.contact_form.fname
+        if ((fname.value==null)||(fname.value=="")){
+              alert("Fields marqued with * must be entered")
+              fname.focus()
+              return false
+              }
+        
+        var subject=document.contact_form.subject 
+        if ((subject.value==null)||(subject.value=="")){
+              alert("Fields marqued with * must be entered")
+              subject.focus()
+              return false
+              }
+       
+        var message=document.contact_form.message 
+        if ((message.value==null)||(message.value=="")){
+              alert("Fields marqued with * must be entered")
+              message.focus()
+              return false
+              }
+            
+        return true
+       }
+       </script>
+      <div class="clear"></div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-link-container">
+      <a href="index.html" class="footer-logo">Executive Aviation Services</a>
+      <a href="contact.html" class="footer-link">Contact</a>
+      <a href="aircraft.html" class="footer-link">Our Aircraft</a>
+      <a href="calculator.html" class="footer-link">Flight Calculator</a>
+      <a href="why.html" class="footer-link">Why E.A.S.</a>
+      <a href="about.html" class="footer-link">About</a>
+    </div>
+  </div>
+
+</body>
+</html>

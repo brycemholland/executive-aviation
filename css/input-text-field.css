@@ -17,53 +17,48 @@ html, body {
   width: 100%; }
 
 /* general ================================================== */
-.input-text-container {
+.input-text-field-container {
   box-sizing: border-box;
   display: block;
   float: left;
-  height: 64px;
-  padding: 0 16px;
-  position: relative; }
-  .input-text-container .label {
-    color: #212121;
-    font: 400 10px "Lora", serif;
-    padding: 8px 0;
-    position: absolute;
-    opacity: 0; }
-  .input-text-container .input-text {
+  padding: 8px 0;
+  position: relative;
+  width: 100%; }
+  .input-text-field-container textarea {
+    box-sizing: border-box; }
+  .input-text-field-container .input-text-field {
     border: none;
     border-bottom: 1px #898989 solid;
-    border-radius: 0;
     box-sizing: border-box;
-    color: #898989;
+    color: #212121;
+    display: block;
     font: 400 18px "Michroma", sans-serif;
-    height: 40px;
-    margin: 16px 0 8px;
-    max-width: 600px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    margin: 16px;
+    margin-top: 12px;
+    position: relative;
+    resize: none;
+    -webkit-transition: border 0.2s ease-in-out;
+    -moz-transition: border 0.2s ease-in-out;
+    -ms-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
     width: 100%; }
-    .input-text-container .input-text:focus {
+    .input-text-field-container .input-text-field:focus {
       border-bottom: 2px #dfb100 solid;
       color: #212121;
       outline: none; }
-  .input-text-container .validation-error {
+  .input-text-field-container .validation-error {
     border-bottom: 2px #ef6c00 solid; }
 
 /* desktop ================================================== */
 @media (min-width: 960px) {
-  .input-text-container {
-    width: 100%; } }
+  .post .input-text-field-container, .sort .input-text-field-container {
+    width: 50%; } }
 /* tablet ================================================== */
 @media (min-width: 700px) and (max-width: 959px) {
-  .input-text-container {
-    width: 100%; } }
+  .input-text-field-container {
+    width: 50%; } }
 /* phone ================================================== */
 @media (max-width: 699px) {
-  .input-text-container {
-    width: 100%; }
-    .input-text-container .input-text {
-      font: 400 14px "Lora", serif; } }
+  .input-text-field-container {
+    width: 100%; } }

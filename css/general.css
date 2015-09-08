@@ -129,10 +129,14 @@ html, body {
       padding-left: 16px; }
 
 .map {
-  background: url("../images/ea_map.png") center no-repeat;
+  background: url("../images/map.png") center no-repeat;
   background-size: cover;
   height: 450px;
   width: 100%; }
+
+input[type="submit"] {
+  border: none;
+  outline: none; }
 
 /* desktop ================================================== */
 /* tablet ================================================== */
