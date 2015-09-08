@@ -1,69 +1,75 @@
 $(document).ready(function(){
 
-// Variables =================================================
 
-  var $sliderContainer = $('.slider-container');
-  var $slideIndicatorContainer = $('.slide-indicator-container');
-  var $slideIndicator = $('.slide-indicator');
-  var $slider = $('.slider');
-  var $slide = $('.slide');
-  var numberOfSlides = $slider.children().length;
-  var slidePercentage = 100/numberOfSlides;
+  $('.slider-container').each(function(){
 
-  var index = 0;
+  // Variables =================================================
 
-// Setup =================================================
-  
-  $slider.css("width", numberOfSlides+"00%");
-  $slide.css("width", slidePercentage+"%");
+    var $sliderContainer = $(this);
+    var $slideIndicatorContainer = $(this).find($('.slide-indicator-container'));
+    var $slideIndicator = $(this).find($('.slide-indicator'));
+    var $slider = $(this).find($('.slider'));
+    var $slide = $(this).find($('.slide'));
+    var numberOfSlides = $slider.children().length;
+    var slidePercentage = 100/numberOfSlides;
 
-  function activateIndicator(){
-    $slideIndicator.removeClass("indicator-active");
-    $('.slide-indicator[data-index="' + index + '"]').addClass("indicator-active");
-  }
+    var index = 0;
 
-  function abortTimer() { // to be called when you want to stop the timer
-    clearInterval(tid);
-  }
-  
-  function runSlider() {
-    if (index < numberOfSlides-1){
-      index++;
-      $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
-      activateIndicator();
-    } else{
-      index = 0;
-      $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
-      activateIndicator();
-    }
-  }
+  // Setup =================================================
+    
+    $slider.css("width", numberOfSlides+"00%");
+    $slide.css("width", slidePercentage+"%");
 
-  activateIndicator();
-  
-  // set interval
-  var tid = setInterval(runSlider, 10000);
-
-  $slideIndicator.click(function(){
-    var thisIndex = $(this).attr("data-index");
-    index = thisIndex;
-    $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
     activateIndicator();
-  });
+    
+    // set interval
+    var tid = setInterval(runSlider, 10000);
 
-  $sliderContainer.on( "swipeleft", function(){
-    if (index != numberOfSlides-1) {
-      index = index+1
+    $slideIndicator.click(function(){
+      var thisIndex = $(this).attr("data-index");
+      index = thisIndex;
       $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
       activateIndicator();
-    }
-  });
+    });
 
-  $sliderContainer.on( "swiperight", function(){
-    if (index != 0) {
-      index = index-1
-      $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
-      activateIndicator();
+    $sliderContainer.on( "swipeleft", function(){
+      if (index != numberOfSlides-1) {
+        index = index+1
+        $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
+        activateIndicator();
+      }
+    });
+
+    $sliderContainer.on( "swiperight", function(){
+      if (index != 0) {
+        index = index-1
+        $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
+        activateIndicator();
+      }
+    });
+
+    function activateIndicator(){
+      var $currentSlideIndicator = $sliderContainer.find($('.slide-indicator[data-index="' + index + '"]'));
+      $slideIndicator.removeClass("indicator-active");
+      $currentSlideIndicator.addClass("indicator-active");
     }
+
+    function abortTimer() { // to be called when you want to stop the timer
+      clearInterval(tid);
+    }
+    
+    function runSlider() {
+      if (index < numberOfSlides-1){
+        index++;
+        $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
+        activateIndicator();
+      } else{
+        index = 0;
+        $slider.css('transform','translate(-'+slidePercentage*index+'%, 0)');
+        activateIndicator();
+      }
+    }
+
   });
 
 });
